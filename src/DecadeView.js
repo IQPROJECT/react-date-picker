@@ -328,13 +328,7 @@ export default class DecadeView extends Component {
   }
 
   getYearsInDecade(value) {
-    const year = getDecadeStartYear(this.toMoment(value))
-
-    const start = this.toMoment(`${year}`, 'YYYY').startOf('year')
-
-    return times(10).map(i => {
-      return this.toMoment(start).add(i, 'year')
-    })
+    return [this.toMoment().startOf('year'), this.toMoment().add(1, 'years').startOf('year'), this.toMoment().add(2, 'years').startOf('year')]
   }
 
   toMoment(date, format) {
