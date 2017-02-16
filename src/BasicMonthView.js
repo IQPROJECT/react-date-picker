@@ -250,6 +250,10 @@ class BasicMonthView extends Component {
     delete flexProps.weekNumberName
     delete flexProps.weekStartDay
 
+    delete flexProps.onTimeChange
+    delete flexProps.showClock
+    delete flexProps.updateOnWheel
+
     if (typeof props.cleanup == 'function') {
       props.cleanup(flexProps)
     }

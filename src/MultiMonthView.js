@@ -229,12 +229,8 @@ export default class MultiMonthView extends Component {
       props.theme && `react-date-picker__multi-month-view--theme-${props.theme}`
     )
 
-    const footerProps = assign({}, props)
-    delete footerProps.onTimeChange
-    delete footerProps.updateOnWheel
-    delete footerProps.showClock
+    const footer = renderFooter(props, this)
 
-    const footer = renderFooter(footerProps, this)
     if (footer) {
       children.push(footer)
     }
@@ -288,6 +284,9 @@ export default class MultiMonthView extends Component {
     delete flexProps.minDate
     delete flexProps.maxDate
 
+    delete flexProps.onTimeChange
+    delete flexProps.showClock
+    delete flexProps.updateOnWheel
 
     return <Flex
       column
