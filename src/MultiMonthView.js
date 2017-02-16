@@ -229,8 +229,12 @@ export default class MultiMonthView extends Component {
       props.theme && `react-date-picker__multi-month-view--theme-${props.theme}`
     )
 
-    const footer = renderFooter(props, this)
+    const footerProps = assign({}, props)
+    delete footerProps.onTimeChange
+    delete footerProps.updateOnWheel
+    delete footerProps.showClock
 
+    const footer = renderFooter(footerProps, this)
     if (footer) {
       children.push(footer)
     }
@@ -309,10 +313,6 @@ export default class MultiMonthView extends Component {
     delete viewProps.viewEnd
     delete viewProps.viewMoments
     delete viewProps.viewStart
-
-    delete viewProps.onTimeChange
-    delete viewProps.updateOnWheel
-    delete viewProps.showClock
 
     const children = times(props.perRow).map(i => {
       const index = (rowIndex * props.perRow) + i
