@@ -267,6 +267,26 @@ export default class MultiMonthView extends Component {
     delete flexProps.viewMoments
     delete flexProps.viewStart
 
+    delete flexProps.focusOnNavMouseDown
+    delete flexProps.focusOnFooterMouseDown
+    delete flexProps.insideField
+    delete flexProps.showClock
+    delete flexProps.getTransitionTime
+    delete flexProps.updateOnWheel
+    delete flexProps.onClockInputBlur
+    delete flexProps.onClockEnterKey
+    delete flexProps.onClockEscapeKey
+    delete flexProps.onFooterCancelClick
+    delete flexProps.onFooterTodayClick
+    delete flexProps.onFooterOkClick
+    delete flexProps.onFooterClearClick
+    delete flexProps.arrows
+    delete flexProps.onActiveDateChange
+    delete flexProps.onTimeChange
+    delete flexProps.onTransitionStart
+    delete flexProps.minDate
+    delete flexProps.maxDate
+
     return <Flex
       column
       inline
