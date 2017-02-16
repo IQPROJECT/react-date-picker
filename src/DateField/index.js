@@ -72,6 +72,7 @@ export default class DateField extends Component {
     delete flexProps.minDate
     delete flexProps.maxDate
     delete flexProps.tabIndex
+    delete flexProps.id
     delete flexProps.pickerProps
     delete flexProps.position
     delete flexProps.showClock
@@ -360,6 +361,7 @@ export default class DateField extends Component {
     })
 
     assignDefined(newInputProps, {
+      id: props.id,
       tabIndex: props.tabIndex,
       placeholder: props.placeholder,
       disabled: props.disabled,
