@@ -83,6 +83,7 @@ export default class DateField extends Component {
     delete flexProps.text
     delete flexProps.theme
     delete flexProps.updateOnDateClick
+    delete flexProps.renderCalendarIcon
 
     if (typeof props.cleanup == 'function') {
       props.cleanup(flexProps)
@@ -909,6 +910,8 @@ DateField.defaultProps = {
 
   onBlur: () => {},
   onFocus: () => {},
+
+  renderCalendarIcon: () => {},
 
   clearIcon: true,
   validateOnBlur: true,

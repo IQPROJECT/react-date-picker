@@ -80,6 +80,7 @@ export default class NavBar extends Component {
     delete flexProps.onViewDateChange
     delete flexProps.renderNavNext
     delete flexProps.renderNavPrev
+    delete flexProps.renderHistoryView
     delete flexProps.secondary
     delete flexProps.theme
     delete flexProps.viewDate
@@ -362,7 +363,8 @@ NavBar.defaultProps = {
   enableHistoryView: true,
   onNavClick: (dir, viewMoment) => {},
 
-  onViewDateChange: () => {}
+  onViewDateChange: () => {},
+  renderHistoryView: () => {}
 }
 
 NavBar.propTypes = {

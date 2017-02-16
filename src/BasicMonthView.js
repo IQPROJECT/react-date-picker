@@ -486,7 +486,7 @@ BasicMonthView.defaultProps = {
 
   dateFormat: 'YYYY-MM-DD',
   alwaysShowPrevWeek: false,
-  weekNumbers: true,
+  weekNumbers: false,
   weekNumberName: null,
 
   weekDayNames: weekDayNamesFactory

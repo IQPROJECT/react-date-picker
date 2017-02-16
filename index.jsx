@@ -130,7 +130,7 @@ var App = React.createClass({
         <br />*/}
         <HistoryView maxDate={Date.now()} />
             <MonthView
-
+      weekNumbers={false}
       dateFormat="YYYY-MM-DD"
       onChange={(dateFormat, {dateMoment}) => {
         console.log(dateFormat, '!!!');
