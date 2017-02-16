@@ -270,9 +270,7 @@ export default class MultiMonthView extends Component {
     delete flexProps.focusOnNavMouseDown
     delete flexProps.focusOnFooterMouseDown
     delete flexProps.insideField
-    delete flexProps.showClock
     delete flexProps.getTransitionTime
-    delete flexProps.updateOnWheel
     delete flexProps.onClockInputBlur
     delete flexProps.onClockEnterKey
     delete flexProps.onClockEscapeKey
@@ -282,10 +280,10 @@ export default class MultiMonthView extends Component {
     delete flexProps.onFooterClearClick
     delete flexProps.arrows
     delete flexProps.onActiveDateChange
-    delete flexProps.onTimeChange
     delete flexProps.onTransitionStart
     delete flexProps.minDate
     delete flexProps.maxDate
+
 
     return <Flex
       column
@@ -311,6 +309,10 @@ export default class MultiMonthView extends Component {
     delete viewProps.viewEnd
     delete viewProps.viewMoments
     delete viewProps.viewStart
+
+    delete viewProps.onTimeChange
+    delete viewProps.updateOnWheel
+    delete viewProps.showClock
 
     const children = times(props.perRow).map(i => {
       const index = (rowIndex * props.perRow) + i
