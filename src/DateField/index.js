@@ -86,6 +86,7 @@ export default class DateField extends Component {
     delete flexProps.theme
     delete flexProps.updateOnDateClick
     delete flexProps.renderCalendarIcon
+    delete flexProps.renderInput
 
     if (typeof props.cleanup == 'function') {
       props.cleanup(flexProps)
