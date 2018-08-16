@@ -22,9 +22,8 @@
 
 .react-date-field__input {
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
   padding: 5px;
   border: none;
   outline: none; }
@@ -88,8 +87,7 @@
 .react-date-picker__clock-center {
   border-radius: 50%;
   position: absolute;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   top: 50%;
   left: 50%; }
 
@@ -198,27 +196,21 @@
   overflow: hidden; }
 
 .react-date-picker__prev {
-  -webkit-transform: translate3d(-100%, 0px, 0px);
-          transform: translate3d(-100%, 0px, 0px); }
+  transform: translate3d(-100%, 0px, 0px); }
 
 .react-date-picker__next {
-  -webkit-transform: translate3d(100%, 0px, 0px);
-          transform: translate3d(100%, 0px, 0px); }
+  transform: translate3d(100%, 0px, 0px); }
 
 .react-date-picker--transition-left {
-  -webkit-transform: translate3d(-100%, 0px, 0px);
-          transform: translate3d(-100%, 0px, 0px); }
+  transform: translate3d(-100%, 0px, 0px); }
   .react-date-picker--transition-left.react-date-picker__next {
-    -webkit-transform: translate3d(0%, 0px, 0px);
-            transform: translate3d(0%, 0px, 0px); }
+    transform: translate3d(0%, 0px, 0px); }
 
 .react-date-picker--transition-right {
   z-index: 1111;
-  -webkit-transform: translate3d(100%, 0px, 0px);
-          transform: translate3d(100%, 0px, 0px); }
+  transform: translate3d(100%, 0px, 0px); }
   .react-date-picker--transition-right.react-date-picker__prev {
-    -webkit-transform: translate3d(0%, 0px, 0px);
-            transform: translate3d(0%, 0px, 0px); }
+    transform: translate3d(0%, 0px, 0px); }
 
 .react-date-picker__center {
   z-index: 10; }
@@ -226,10 +218,7 @@
 .react-date-picker__prev.react-date-picker--transition,
 .react-date-picker__center.react-date-picker--transition,
 .react-date-picker__next.react-date-picker--transition {
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform; }
+  transition-property: transform; }
 
 .react-date-picker__prev,
 .react-date-picker__next {
@@ -254,87 +243,71 @@
     color: #BFBFBF; }
   .react-date-picker__month-view-cell,
   .react-date-picker__basic-month-view-cell {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-    display: -webkit-box;
+    -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row;
         flex-flow: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
   .react-date-picker__month-view-row,
   .react-date-picker__basic-month-view-row {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row;
         flex-flow: row;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     -ms-flex-preferred-size: auto;
         flex-basis: auto; }
   .react-date-picker__month-view-week-day-names,
   .react-date-picker__basic-month-view-week-day-names {
-    -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none; }
+    -ms-flex: none;
+        flex: none; }
 
 .react-flex-v2 {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .react-flex-v2--inline {
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex; }
 
 .react-flex-v2--display-flex {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .react-flex-v2--display-inline-flex {
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex; }
 
 /* ALIGN-ITEMS */
 .react-flex-v2--align-items-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -ms-flex-align: center;
+      align-items: center; }
 
 .react-flex-v2--align-items-stretch {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
+  -ms-flex-align: stretch;
+      align-items: stretch; }
 
 .react-flex-v2--align-items-baseline {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
+  -ms-flex-align: baseline;
+      align-items: baseline; }
 
 .react-flex-v2--align-items-end,
 .react-flex-v2--align-items-flex-end {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
+  -ms-flex-align: end;
+      align-items: flex-end; }
 
 .react-flex-v2--align-items-start,
 .react-flex-v2--align-items-flex-start {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -ms-flex-align: start;
+      align-items: flex-start; }
 
 /* ALIGN-SELF */
 .react-flex-v2--align-self-center {
@@ -398,29 +371,25 @@
 /* JUSTIFY-CONTENT */
 .react-flex-v2--justify-content-start,
 .react-flex-v2--justify-content-flex-start {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
 
 .react-flex-v2--justify-content-end,
 .react-flex-v2--justify-content-flex-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
 
 .react-flex-v2--justify-content-center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .react-flex-v2--justify-content-space-around {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
 .react-flex-v2--justify-content-space-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 /* WRAP */
 .react-flex-v2--wrap {
@@ -429,29 +398,21 @@
 
 /* COLUMN */
 .react-flex-v2--column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 .react-flex-v2--column-reverse {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse; }
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
 
 /* ROW */
 .react-flex-v2--row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
+  -ms-flex-direction: row;
+      flex-direction: row; }
 
 .react-flex-v2--row-reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
 
 /* FLEX-BASIS */
 .react-flex-v2--flex-basis-auto {
@@ -486,1015 +447,813 @@
 /* FLEX */
 .react-flex-v2--flex-none,
 .react-flex-v2--flex-0 {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none; }
+  -ms-flex: none;
+      flex: none; }
 
 .react-flex-v2--flex-1 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+  -ms-flex: 1;
+      flex: 1; }
 
 .react-flex-v2--flex-2 {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2; }
+  -ms-flex: 2;
+      flex: 2; }
 
 .react-flex-v2--flex-3 {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3; }
+  -ms-flex: 3;
+      flex: 3; }
 
 .react-flex-v2--flex-4 {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4; }
+  -ms-flex: 4;
+      flex: 4; }
 
 .react-flex-v2--flex-5 {
-  -webkit-box-flex: 5;
-      -ms-flex: 5;
-          flex: 5; }
+  -ms-flex: 5;
+      flex: 5; }
 
 .react-flex-v2--flex-6 {
-  -webkit-box-flex: 6;
-      -ms-flex: 6;
-          flex: 6; }
+  -ms-flex: 6;
+      flex: 6; }
 
 .react-flex-v2--flex-7 {
-  -webkit-box-flex: 7;
-      -ms-flex: 7;
-          flex: 7; }
+  -ms-flex: 7;
+      flex: 7; }
 
 .react-flex-v2--flex-8 {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8; }
+  -ms-flex: 8;
+      flex: 8; }
 
 .react-flex-v2--flex-9 {
-  -webkit-box-flex: 9;
-      -ms-flex: 9;
-          flex: 9; }
+  -ms-flex: 9;
+      flex: 9; }
 
 .react-flex-v2--flex-10 {
-  -webkit-box-flex: 10;
-      -ms-flex: 10;
-          flex: 10; }
+  -ms-flex: 10;
+      flex: 10; }
 
 .react-flex-v2--flex-11 {
-  -webkit-box-flex: 11;
-      -ms-flex: 11;
-          flex: 11; }
+  -ms-flex: 11;
+      flex: 11; }
 
 .react-flex-v2--flex-12 {
-  -webkit-box-flex: 12;
-      -ms-flex: 12;
-          flex: 12; }
+  -ms-flex: 12;
+      flex: 12; }
 
 .react-flex-v2--flex-13 {
-  -webkit-box-flex: 13;
-      -ms-flex: 13;
-          flex: 13; }
+  -ms-flex: 13;
+      flex: 13; }
 
 .react-flex-v2--flex-14 {
-  -webkit-box-flex: 14;
-      -ms-flex: 14;
-          flex: 14; }
+  -ms-flex: 14;
+      flex: 14; }
 
 .react-flex-v2--flex-15 {
-  -webkit-box-flex: 15;
-      -ms-flex: 15;
-          flex: 15; }
+  -ms-flex: 15;
+      flex: 15; }
 
 .react-flex-v2--flex-16 {
-  -webkit-box-flex: 16;
-      -ms-flex: 16;
-          flex: 16; }
+  -ms-flex: 16;
+      flex: 16; }
 
 .react-flex-v2--flex-17 {
-  -webkit-box-flex: 17;
-      -ms-flex: 17;
-          flex: 17; }
+  -ms-flex: 17;
+      flex: 17; }
 
 .react-flex-v2--flex-18 {
-  -webkit-box-flex: 18;
-      -ms-flex: 18;
-          flex: 18; }
+  -ms-flex: 18;
+      flex: 18; }
 
 .react-flex-v2--flex-19 {
-  -webkit-box-flex: 19;
-      -ms-flex: 19;
-          flex: 19; }
+  -ms-flex: 19;
+      flex: 19; }
 
 .react-flex-v2--flex-20 {
-  -webkit-box-flex: 20;
-      -ms-flex: 20;
-          flex: 20; }
+  -ms-flex: 20;
+      flex: 20; }
 
 .react-flex-v2--flex-21 {
-  -webkit-box-flex: 21;
-      -ms-flex: 21;
-          flex: 21; }
+  -ms-flex: 21;
+      flex: 21; }
 
 .react-flex-v2--flex-22 {
-  -webkit-box-flex: 22;
-      -ms-flex: 22;
-          flex: 22; }
+  -ms-flex: 22;
+      flex: 22; }
 
 .react-flex-v2--flex-23 {
-  -webkit-box-flex: 23;
-      -ms-flex: 23;
-          flex: 23; }
+  -ms-flex: 23;
+      flex: 23; }
 
 .react-flex-v2--flex-24 {
-  -webkit-box-flex: 24;
-      -ms-flex: 24;
-          flex: 24; }
+  -ms-flex: 24;
+      flex: 24; }
 
 .react-flex-v2--flex-25 {
-  -webkit-box-flex: 25;
-      -ms-flex: 25;
-          flex: 25; }
+  -ms-flex: 25;
+      flex: 25; }
 
 .react-flex-v2--flex-26 {
-  -webkit-box-flex: 26;
-      -ms-flex: 26;
-          flex: 26; }
+  -ms-flex: 26;
+      flex: 26; }
 
 .react-flex-v2--flex-27 {
-  -webkit-box-flex: 27;
-      -ms-flex: 27;
-          flex: 27; }
+  -ms-flex: 27;
+      flex: 27; }
 
 .react-flex-v2--flex-28 {
-  -webkit-box-flex: 28;
-      -ms-flex: 28;
-          flex: 28; }
+  -ms-flex: 28;
+      flex: 28; }
 
 .react-flex-v2--flex-29 {
-  -webkit-box-flex: 29;
-      -ms-flex: 29;
-          flex: 29; }
+  -ms-flex: 29;
+      flex: 29; }
 
 .react-flex-v2--flex-30 {
-  -webkit-box-flex: 30;
-      -ms-flex: 30;
-          flex: 30; }
+  -ms-flex: 30;
+      flex: 30; }
 
 .react-flex-v2--flex-31 {
-  -webkit-box-flex: 31;
-      -ms-flex: 31;
-          flex: 31; }
+  -ms-flex: 31;
+      flex: 31; }
 
 .react-flex-v2--flex-32 {
-  -webkit-box-flex: 32;
-      -ms-flex: 32;
-          flex: 32; }
+  -ms-flex: 32;
+      flex: 32; }
 
 .react-flex-v2--flex-33 {
-  -webkit-box-flex: 33;
-      -ms-flex: 33;
-          flex: 33; }
+  -ms-flex: 33;
+      flex: 33; }
 
 .react-flex-v2--flex-34 {
-  -webkit-box-flex: 34;
-      -ms-flex: 34;
-          flex: 34; }
+  -ms-flex: 34;
+      flex: 34; }
 
 .react-flex-v2--flex-35 {
-  -webkit-box-flex: 35;
-      -ms-flex: 35;
-          flex: 35; }
+  -ms-flex: 35;
+      flex: 35; }
 
 .react-flex-v2--flex-36 {
-  -webkit-box-flex: 36;
-      -ms-flex: 36;
-          flex: 36; }
+  -ms-flex: 36;
+      flex: 36; }
 
 .react-flex-v2--flex-37 {
-  -webkit-box-flex: 37;
-      -ms-flex: 37;
-          flex: 37; }
+  -ms-flex: 37;
+      flex: 37; }
 
 .react-flex-v2--flex-38 {
-  -webkit-box-flex: 38;
-      -ms-flex: 38;
-          flex: 38; }
+  -ms-flex: 38;
+      flex: 38; }
 
 .react-flex-v2--flex-39 {
-  -webkit-box-flex: 39;
-      -ms-flex: 39;
-          flex: 39; }
+  -ms-flex: 39;
+      flex: 39; }
 
 .react-flex-v2--flex-40 {
-  -webkit-box-flex: 40;
-      -ms-flex: 40;
-          flex: 40; }
+  -ms-flex: 40;
+      flex: 40; }
 
 .react-flex-v2--flex-41 {
-  -webkit-box-flex: 41;
-      -ms-flex: 41;
-          flex: 41; }
+  -ms-flex: 41;
+      flex: 41; }
 
 .react-flex-v2--flex-42 {
-  -webkit-box-flex: 42;
-      -ms-flex: 42;
-          flex: 42; }
+  -ms-flex: 42;
+      flex: 42; }
 
 .react-flex-v2--flex-43 {
-  -webkit-box-flex: 43;
-      -ms-flex: 43;
-          flex: 43; }
+  -ms-flex: 43;
+      flex: 43; }
 
 .react-flex-v2--flex-44 {
-  -webkit-box-flex: 44;
-      -ms-flex: 44;
-          flex: 44; }
+  -ms-flex: 44;
+      flex: 44; }
 
 .react-flex-v2--flex-45 {
-  -webkit-box-flex: 45;
-      -ms-flex: 45;
-          flex: 45; }
+  -ms-flex: 45;
+      flex: 45; }
 
 .react-flex-v2--flex-46 {
-  -webkit-box-flex: 46;
-      -ms-flex: 46;
-          flex: 46; }
+  -ms-flex: 46;
+      flex: 46; }
 
 .react-flex-v2--flex-47 {
-  -webkit-box-flex: 47;
-      -ms-flex: 47;
-          flex: 47; }
+  -ms-flex: 47;
+      flex: 47; }
 
 .react-flex-v2--flex-48 {
-  -webkit-box-flex: 48;
-      -ms-flex: 48;
-          flex: 48; }
+  -ms-flex: 48;
+      flex: 48; }
 
 .react-flex-v2--flex-49 {
-  -webkit-box-flex: 49;
-      -ms-flex: 49;
-          flex: 49; }
+  -ms-flex: 49;
+      flex: 49; }
 
 .react-flex-v2--flex-50 {
-  -webkit-box-flex: 50;
-      -ms-flex: 50;
-          flex: 50; }
+  -ms-flex: 50;
+      flex: 50; }
 
 .react-flex-v2--flex-51 {
-  -webkit-box-flex: 51;
-      -ms-flex: 51;
-          flex: 51; }
+  -ms-flex: 51;
+      flex: 51; }
 
 .react-flex-v2--flex-52 {
-  -webkit-box-flex: 52;
-      -ms-flex: 52;
-          flex: 52; }
+  -ms-flex: 52;
+      flex: 52; }
 
 .react-flex-v2--flex-53 {
-  -webkit-box-flex: 53;
-      -ms-flex: 53;
-          flex: 53; }
+  -ms-flex: 53;
+      flex: 53; }
 
 .react-flex-v2--flex-54 {
-  -webkit-box-flex: 54;
-      -ms-flex: 54;
-          flex: 54; }
+  -ms-flex: 54;
+      flex: 54; }
 
 .react-flex-v2--flex-55 {
-  -webkit-box-flex: 55;
-      -ms-flex: 55;
-          flex: 55; }
+  -ms-flex: 55;
+      flex: 55; }
 
 .react-flex-v2--flex-56 {
-  -webkit-box-flex: 56;
-      -ms-flex: 56;
-          flex: 56; }
+  -ms-flex: 56;
+      flex: 56; }
 
 .react-flex-v2--flex-57 {
-  -webkit-box-flex: 57;
-      -ms-flex: 57;
-          flex: 57; }
+  -ms-flex: 57;
+      flex: 57; }
 
 .react-flex-v2--flex-58 {
-  -webkit-box-flex: 58;
-      -ms-flex: 58;
-          flex: 58; }
+  -ms-flex: 58;
+      flex: 58; }
 
 .react-flex-v2--flex-59 {
-  -webkit-box-flex: 59;
-      -ms-flex: 59;
-          flex: 59; }
+  -ms-flex: 59;
+      flex: 59; }
 
 .react-flex-v2--flex-60 {
-  -webkit-box-flex: 60;
-      -ms-flex: 60;
-          flex: 60; }
+  -ms-flex: 60;
+      flex: 60; }
 
 .react-flex-v2--flex-61 {
-  -webkit-box-flex: 61;
-      -ms-flex: 61;
-          flex: 61; }
+  -ms-flex: 61;
+      flex: 61; }
 
 .react-flex-v2--flex-62 {
-  -webkit-box-flex: 62;
-      -ms-flex: 62;
-          flex: 62; }
+  -ms-flex: 62;
+      flex: 62; }
 
 .react-flex-v2--flex-63 {
-  -webkit-box-flex: 63;
-      -ms-flex: 63;
-          flex: 63; }
+  -ms-flex: 63;
+      flex: 63; }
 
 .react-flex-v2--flex-64 {
-  -webkit-box-flex: 64;
-      -ms-flex: 64;
-          flex: 64; }
+  -ms-flex: 64;
+      flex: 64; }
 
 .react-flex-v2--flex-65 {
-  -webkit-box-flex: 65;
-      -ms-flex: 65;
-          flex: 65; }
+  -ms-flex: 65;
+      flex: 65; }
 
 .react-flex-v2--flex-66 {
-  -webkit-box-flex: 66;
-      -ms-flex: 66;
-          flex: 66; }
+  -ms-flex: 66;
+      flex: 66; }
 
 .react-flex-v2--flex-67 {
-  -webkit-box-flex: 67;
-      -ms-flex: 67;
-          flex: 67; }
+  -ms-flex: 67;
+      flex: 67; }
 
 .react-flex-v2--flex-68 {
-  -webkit-box-flex: 68;
-      -ms-flex: 68;
-          flex: 68; }
+  -ms-flex: 68;
+      flex: 68; }
 
 .react-flex-v2--flex-69 {
-  -webkit-box-flex: 69;
-      -ms-flex: 69;
-          flex: 69; }
+  -ms-flex: 69;
+      flex: 69; }
 
 .react-flex-v2--flex-70 {
-  -webkit-box-flex: 70;
-      -ms-flex: 70;
-          flex: 70; }
+  -ms-flex: 70;
+      flex: 70; }
 
 .react-flex-v2--flex-71 {
-  -webkit-box-flex: 71;
-      -ms-flex: 71;
-          flex: 71; }
+  -ms-flex: 71;
+      flex: 71; }
 
 .react-flex-v2--flex-72 {
-  -webkit-box-flex: 72;
-      -ms-flex: 72;
-          flex: 72; }
+  -ms-flex: 72;
+      flex: 72; }
 
 .react-flex-v2--flex-73 {
-  -webkit-box-flex: 73;
-      -ms-flex: 73;
-          flex: 73; }
+  -ms-flex: 73;
+      flex: 73; }
 
 .react-flex-v2--flex-74 {
-  -webkit-box-flex: 74;
-      -ms-flex: 74;
-          flex: 74; }
+  -ms-flex: 74;
+      flex: 74; }
 
 .react-flex-v2--flex-75 {
-  -webkit-box-flex: 75;
-      -ms-flex: 75;
-          flex: 75; }
+  -ms-flex: 75;
+      flex: 75; }
 
 .react-flex-v2--flex-76 {
-  -webkit-box-flex: 76;
-      -ms-flex: 76;
-          flex: 76; }
+  -ms-flex: 76;
+      flex: 76; }
 
 .react-flex-v2--flex-77 {
-  -webkit-box-flex: 77;
-      -ms-flex: 77;
-          flex: 77; }
+  -ms-flex: 77;
+      flex: 77; }
 
 .react-flex-v2--flex-78 {
-  -webkit-box-flex: 78;
-      -ms-flex: 78;
-          flex: 78; }
+  -ms-flex: 78;
+      flex: 78; }
 
 .react-flex-v2--flex-79 {
-  -webkit-box-flex: 79;
-      -ms-flex: 79;
-          flex: 79; }
+  -ms-flex: 79;
+      flex: 79; }
 
 .react-flex-v2--flex-80 {
-  -webkit-box-flex: 80;
-      -ms-flex: 80;
-          flex: 80; }
+  -ms-flex: 80;
+      flex: 80; }
 
 .react-flex-v2--flex-81 {
-  -webkit-box-flex: 81;
-      -ms-flex: 81;
-          flex: 81; }
+  -ms-flex: 81;
+      flex: 81; }
 
 .react-flex-v2--flex-82 {
-  -webkit-box-flex: 82;
-      -ms-flex: 82;
-          flex: 82; }
+  -ms-flex: 82;
+      flex: 82; }
 
 .react-flex-v2--flex-83 {
-  -webkit-box-flex: 83;
-      -ms-flex: 83;
-          flex: 83; }
+  -ms-flex: 83;
+      flex: 83; }
 
 .react-flex-v2--flex-84 {
-  -webkit-box-flex: 84;
-      -ms-flex: 84;
-          flex: 84; }
+  -ms-flex: 84;
+      flex: 84; }
 
 .react-flex-v2--flex-85 {
-  -webkit-box-flex: 85;
-      -ms-flex: 85;
-          flex: 85; }
+  -ms-flex: 85;
+      flex: 85; }
 
 .react-flex-v2--flex-86 {
-  -webkit-box-flex: 86;
-      -ms-flex: 86;
-          flex: 86; }
+  -ms-flex: 86;
+      flex: 86; }
 
 .react-flex-v2--flex-87 {
-  -webkit-box-flex: 87;
-      -ms-flex: 87;
-          flex: 87; }
+  -ms-flex: 87;
+      flex: 87; }
 
 .react-flex-v2--flex-88 {
-  -webkit-box-flex: 88;
-      -ms-flex: 88;
-          flex: 88; }
+  -ms-flex: 88;
+      flex: 88; }
 
 .react-flex-v2--flex-89 {
-  -webkit-box-flex: 89;
-      -ms-flex: 89;
-          flex: 89; }
+  -ms-flex: 89;
+      flex: 89; }
 
 .react-flex-v2--flex-90 {
-  -webkit-box-flex: 90;
-      -ms-flex: 90;
-          flex: 90; }
+  -ms-flex: 90;
+      flex: 90; }
 
 .react-flex-v2--flex-91 {
-  -webkit-box-flex: 91;
-      -ms-flex: 91;
-          flex: 91; }
+  -ms-flex: 91;
+      flex: 91; }
 
 .react-flex-v2--flex-92 {
-  -webkit-box-flex: 92;
-      -ms-flex: 92;
-          flex: 92; }
+  -ms-flex: 92;
+      flex: 92; }
 
 .react-flex-v2--flex-93 {
-  -webkit-box-flex: 93;
-      -ms-flex: 93;
-          flex: 93; }
+  -ms-flex: 93;
+      flex: 93; }
 
 .react-flex-v2--flex-94 {
-  -webkit-box-flex: 94;
-      -ms-flex: 94;
-          flex: 94; }
+  -ms-flex: 94;
+      flex: 94; }
 
 .react-flex-v2--flex-95 {
-  -webkit-box-flex: 95;
-      -ms-flex: 95;
-          flex: 95; }
+  -ms-flex: 95;
+      flex: 95; }
 
 .react-flex-v2--flex-96 {
-  -webkit-box-flex: 96;
-      -ms-flex: 96;
-          flex: 96; }
+  -ms-flex: 96;
+      flex: 96; }
 
 .react-flex-v2--flex-97 {
-  -webkit-box-flex: 97;
-      -ms-flex: 97;
-          flex: 97; }
+  -ms-flex: 97;
+      flex: 97; }
 
 .react-flex-v2--flex-98 {
-  -webkit-box-flex: 98;
-      -ms-flex: 98;
-          flex: 98; }
+  -ms-flex: 98;
+      flex: 98; }
 
 .react-flex-v2--flex-99 {
-  -webkit-box-flex: 99;
-      -ms-flex: 99;
-          flex: 99; }
+  -ms-flex: 99;
+      flex: 99; }
 
 .react-flex-v2--flex-100 {
-  -webkit-box-flex: 100;
-      -ms-flex: 100;
-          flex: 100; }
+  -ms-flex: 100;
+      flex: 100; }
 
 /* FLEX-GROW */
 .react-flex-v2--flex-grow-0 {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0; }
+  -ms-flex-positive: 0;
+      flex-grow: 0; }
 
 .react-flex-v2--flex-grow-1 {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
 
 .react-flex-v2--flex-grow-2 {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2; }
+  -ms-flex-positive: 2;
+      flex-grow: 2; }
 
 .react-flex-v2--flex-grow-3 {
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3; }
+  -ms-flex-positive: 3;
+      flex-grow: 3; }
 
 .react-flex-v2--flex-grow-4 {
-  -webkit-box-flex: 4;
-      -ms-flex-positive: 4;
-          flex-grow: 4; }
+  -ms-flex-positive: 4;
+      flex-grow: 4; }
 
 .react-flex-v2--flex-grow-5 {
-  -webkit-box-flex: 5;
-      -ms-flex-positive: 5;
-          flex-grow: 5; }
+  -ms-flex-positive: 5;
+      flex-grow: 5; }
 
 .react-flex-v2--flex-grow-6 {
-  -webkit-box-flex: 6;
-      -ms-flex-positive: 6;
-          flex-grow: 6; }
+  -ms-flex-positive: 6;
+      flex-grow: 6; }
 
 .react-flex-v2--flex-grow-7 {
-  -webkit-box-flex: 7;
-      -ms-flex-positive: 7;
-          flex-grow: 7; }
+  -ms-flex-positive: 7;
+      flex-grow: 7; }
 
 .react-flex-v2--flex-grow-8 {
-  -webkit-box-flex: 8;
-      -ms-flex-positive: 8;
-          flex-grow: 8; }
+  -ms-flex-positive: 8;
+      flex-grow: 8; }
 
 .react-flex-v2--flex-grow-9 {
-  -webkit-box-flex: 9;
-      -ms-flex-positive: 9;
-          flex-grow: 9; }
+  -ms-flex-positive: 9;
+      flex-grow: 9; }
 
 .react-flex-v2--flex-grow-10 {
-  -webkit-box-flex: 10;
-      -ms-flex-positive: 10;
-          flex-grow: 10; }
+  -ms-flex-positive: 10;
+      flex-grow: 10; }
 
 .react-flex-v2--flex-grow-11 {
-  -webkit-box-flex: 11;
-      -ms-flex-positive: 11;
-          flex-grow: 11; }
+  -ms-flex-positive: 11;
+      flex-grow: 11; }
 
 .react-flex-v2--flex-grow-12 {
-  -webkit-box-flex: 12;
-      -ms-flex-positive: 12;
-          flex-grow: 12; }
+  -ms-flex-positive: 12;
+      flex-grow: 12; }
 
 .react-flex-v2--flex-grow-13 {
-  -webkit-box-flex: 13;
-      -ms-flex-positive: 13;
-          flex-grow: 13; }
+  -ms-flex-positive: 13;
+      flex-grow: 13; }
 
 .react-flex-v2--flex-grow-14 {
-  -webkit-box-flex: 14;
-      -ms-flex-positive: 14;
-          flex-grow: 14; }
+  -ms-flex-positive: 14;
+      flex-grow: 14; }
 
 .react-flex-v2--flex-grow-15 {
-  -webkit-box-flex: 15;
-      -ms-flex-positive: 15;
-          flex-grow: 15; }
+  -ms-flex-positive: 15;
+      flex-grow: 15; }
 
 .react-flex-v2--flex-grow-16 {
-  -webkit-box-flex: 16;
-      -ms-flex-positive: 16;
-          flex-grow: 16; }
+  -ms-flex-positive: 16;
+      flex-grow: 16; }
 
 .react-flex-v2--flex-grow-17 {
-  -webkit-box-flex: 17;
-      -ms-flex-positive: 17;
-          flex-grow: 17; }
+  -ms-flex-positive: 17;
+      flex-grow: 17; }
 
 .react-flex-v2--flex-grow-18 {
-  -webkit-box-flex: 18;
-      -ms-flex-positive: 18;
-          flex-grow: 18; }
+  -ms-flex-positive: 18;
+      flex-grow: 18; }
 
 .react-flex-v2--flex-grow-19 {
-  -webkit-box-flex: 19;
-      -ms-flex-positive: 19;
-          flex-grow: 19; }
+  -ms-flex-positive: 19;
+      flex-grow: 19; }
 
 .react-flex-v2--flex-grow-20 {
-  -webkit-box-flex: 20;
-      -ms-flex-positive: 20;
-          flex-grow: 20; }
+  -ms-flex-positive: 20;
+      flex-grow: 20; }
 
 .react-flex-v2--flex-grow-21 {
-  -webkit-box-flex: 21;
-      -ms-flex-positive: 21;
-          flex-grow: 21; }
+  -ms-flex-positive: 21;
+      flex-grow: 21; }
 
 .react-flex-v2--flex-grow-22 {
-  -webkit-box-flex: 22;
-      -ms-flex-positive: 22;
-          flex-grow: 22; }
+  -ms-flex-positive: 22;
+      flex-grow: 22; }
 
 .react-flex-v2--flex-grow-23 {
-  -webkit-box-flex: 23;
-      -ms-flex-positive: 23;
-          flex-grow: 23; }
+  -ms-flex-positive: 23;
+      flex-grow: 23; }
 
 .react-flex-v2--flex-grow-24 {
-  -webkit-box-flex: 24;
-      -ms-flex-positive: 24;
-          flex-grow: 24; }
+  -ms-flex-positive: 24;
+      flex-grow: 24; }
 
 .react-flex-v2--flex-grow-25 {
-  -webkit-box-flex: 25;
-      -ms-flex-positive: 25;
-          flex-grow: 25; }
+  -ms-flex-positive: 25;
+      flex-grow: 25; }
 
 .react-flex-v2--flex-grow-26 {
-  -webkit-box-flex: 26;
-      -ms-flex-positive: 26;
-          flex-grow: 26; }
+  -ms-flex-positive: 26;
+      flex-grow: 26; }
 
 .react-flex-v2--flex-grow-27 {
-  -webkit-box-flex: 27;
-      -ms-flex-positive: 27;
-          flex-grow: 27; }
+  -ms-flex-positive: 27;
+      flex-grow: 27; }
 
 .react-flex-v2--flex-grow-28 {
-  -webkit-box-flex: 28;
-      -ms-flex-positive: 28;
-          flex-grow: 28; }
+  -ms-flex-positive: 28;
+      flex-grow: 28; }
 
 .react-flex-v2--flex-grow-29 {
-  -webkit-box-flex: 29;
-      -ms-flex-positive: 29;
-          flex-grow: 29; }
+  -ms-flex-positive: 29;
+      flex-grow: 29; }
 
 .react-flex-v2--flex-grow-30 {
-  -webkit-box-flex: 30;
-      -ms-flex-positive: 30;
-          flex-grow: 30; }
+  -ms-flex-positive: 30;
+      flex-grow: 30; }
 
 .react-flex-v2--flex-grow-31 {
-  -webkit-box-flex: 31;
-      -ms-flex-positive: 31;
-          flex-grow: 31; }
+  -ms-flex-positive: 31;
+      flex-grow: 31; }
 
 .react-flex-v2--flex-grow-32 {
-  -webkit-box-flex: 32;
-      -ms-flex-positive: 32;
-          flex-grow: 32; }
+  -ms-flex-positive: 32;
+      flex-grow: 32; }
 
 .react-flex-v2--flex-grow-33 {
-  -webkit-box-flex: 33;
-      -ms-flex-positive: 33;
-          flex-grow: 33; }
+  -ms-flex-positive: 33;
+      flex-grow: 33; }
 
 .react-flex-v2--flex-grow-34 {
-  -webkit-box-flex: 34;
-      -ms-flex-positive: 34;
-          flex-grow: 34; }
+  -ms-flex-positive: 34;
+      flex-grow: 34; }
 
 .react-flex-v2--flex-grow-35 {
-  -webkit-box-flex: 35;
-      -ms-flex-positive: 35;
-          flex-grow: 35; }
+  -ms-flex-positive: 35;
+      flex-grow: 35; }
 
 .react-flex-v2--flex-grow-36 {
-  -webkit-box-flex: 36;
-      -ms-flex-positive: 36;
-          flex-grow: 36; }
+  -ms-flex-positive: 36;
+      flex-grow: 36; }
 
 .react-flex-v2--flex-grow-37 {
-  -webkit-box-flex: 37;
-      -ms-flex-positive: 37;
-          flex-grow: 37; }
+  -ms-flex-positive: 37;
+      flex-grow: 37; }
 
 .react-flex-v2--flex-grow-38 {
-  -webkit-box-flex: 38;
-      -ms-flex-positive: 38;
-          flex-grow: 38; }
+  -ms-flex-positive: 38;
+      flex-grow: 38; }
 
 .react-flex-v2--flex-grow-39 {
-  -webkit-box-flex: 39;
-      -ms-flex-positive: 39;
-          flex-grow: 39; }
+  -ms-flex-positive: 39;
+      flex-grow: 39; }
 
 .react-flex-v2--flex-grow-40 {
-  -webkit-box-flex: 40;
-      -ms-flex-positive: 40;
-          flex-grow: 40; }
+  -ms-flex-positive: 40;
+      flex-grow: 40; }
 
 .react-flex-v2--flex-grow-41 {
-  -webkit-box-flex: 41;
-      -ms-flex-positive: 41;
-          flex-grow: 41; }
+  -ms-flex-positive: 41;
+      flex-grow: 41; }
 
 .react-flex-v2--flex-grow-42 {
-  -webkit-box-flex: 42;
-      -ms-flex-positive: 42;
-          flex-grow: 42; }
+  -ms-flex-positive: 42;
+      flex-grow: 42; }
 
 .react-flex-v2--flex-grow-43 {
-  -webkit-box-flex: 43;
-      -ms-flex-positive: 43;
-          flex-grow: 43; }
+  -ms-flex-positive: 43;
+      flex-grow: 43; }
 
 .react-flex-v2--flex-grow-44 {
-  -webkit-box-flex: 44;
-      -ms-flex-positive: 44;
-          flex-grow: 44; }
+  -ms-flex-positive: 44;
+      flex-grow: 44; }
 
 .react-flex-v2--flex-grow-45 {
-  -webkit-box-flex: 45;
-      -ms-flex-positive: 45;
-          flex-grow: 45; }
+  -ms-flex-positive: 45;
+      flex-grow: 45; }
 
 .react-flex-v2--flex-grow-46 {
-  -webkit-box-flex: 46;
-      -ms-flex-positive: 46;
-          flex-grow: 46; }
+  -ms-flex-positive: 46;
+      flex-grow: 46; }
 
 .react-flex-v2--flex-grow-47 {
-  -webkit-box-flex: 47;
-      -ms-flex-positive: 47;
-          flex-grow: 47; }
+  -ms-flex-positive: 47;
+      flex-grow: 47; }
 
 .react-flex-v2--flex-grow-48 {
-  -webkit-box-flex: 48;
-      -ms-flex-positive: 48;
-          flex-grow: 48; }
+  -ms-flex-positive: 48;
+      flex-grow: 48; }
 
 .react-flex-v2--flex-grow-49 {
-  -webkit-box-flex: 49;
-      -ms-flex-positive: 49;
-          flex-grow: 49; }
+  -ms-flex-positive: 49;
+      flex-grow: 49; }
 
 .react-flex-v2--flex-grow-50 {
-  -webkit-box-flex: 50;
-      -ms-flex-positive: 50;
-          flex-grow: 50; }
+  -ms-flex-positive: 50;
+      flex-grow: 50; }
 
 .react-flex-v2--flex-grow-51 {
-  -webkit-box-flex: 51;
-      -ms-flex-positive: 51;
-          flex-grow: 51; }
+  -ms-flex-positive: 51;
+      flex-grow: 51; }
 
 .react-flex-v2--flex-grow-52 {
-  -webkit-box-flex: 52;
-      -ms-flex-positive: 52;
-          flex-grow: 52; }
+  -ms-flex-positive: 52;
+      flex-grow: 52; }
 
 .react-flex-v2--flex-grow-53 {
-  -webkit-box-flex: 53;
-      -ms-flex-positive: 53;
-          flex-grow: 53; }
+  -ms-flex-positive: 53;
+      flex-grow: 53; }
 
 .react-flex-v2--flex-grow-54 {
-  -webkit-box-flex: 54;
-      -ms-flex-positive: 54;
-          flex-grow: 54; }
+  -ms-flex-positive: 54;
+      flex-grow: 54; }
 
 .react-flex-v2--flex-grow-55 {
-  -webkit-box-flex: 55;
-      -ms-flex-positive: 55;
-          flex-grow: 55; }
+  -ms-flex-positive: 55;
+      flex-grow: 55; }
 
 .react-flex-v2--flex-grow-56 {
-  -webkit-box-flex: 56;
-      -ms-flex-positive: 56;
-          flex-grow: 56; }
+  -ms-flex-positive: 56;
+      flex-grow: 56; }
 
 .react-flex-v2--flex-grow-57 {
-  -webkit-box-flex: 57;
-      -ms-flex-positive: 57;
-          flex-grow: 57; }
+  -ms-flex-positive: 57;
+      flex-grow: 57; }
 
 .react-flex-v2--flex-grow-58 {
-  -webkit-box-flex: 58;
-      -ms-flex-positive: 58;
-          flex-grow: 58; }
+  -ms-flex-positive: 58;
+      flex-grow: 58; }
 
 .react-flex-v2--flex-grow-59 {
-  -webkit-box-flex: 59;
-      -ms-flex-positive: 59;
-          flex-grow: 59; }
+  -ms-flex-positive: 59;
+      flex-grow: 59; }
 
 .react-flex-v2--flex-grow-60 {
-  -webkit-box-flex: 60;
-      -ms-flex-positive: 60;
-          flex-grow: 60; }
+  -ms-flex-positive: 60;
+      flex-grow: 60; }
 
 .react-flex-v2--flex-grow-61 {
-  -webkit-box-flex: 61;
-      -ms-flex-positive: 61;
-          flex-grow: 61; }
+  -ms-flex-positive: 61;
+      flex-grow: 61; }
 
 .react-flex-v2--flex-grow-62 {
-  -webkit-box-flex: 62;
-      -ms-flex-positive: 62;
-          flex-grow: 62; }
+  -ms-flex-positive: 62;
+      flex-grow: 62; }
 
 .react-flex-v2--flex-grow-63 {
-  -webkit-box-flex: 63;
-      -ms-flex-positive: 63;
-          flex-grow: 63; }
+  -ms-flex-positive: 63;
+      flex-grow: 63; }
 
 .react-flex-v2--flex-grow-64 {
-  -webkit-box-flex: 64;
-      -ms-flex-positive: 64;
-          flex-grow: 64; }
+  -ms-flex-positive: 64;
+      flex-grow: 64; }
 
 .react-flex-v2--flex-grow-65 {
-  -webkit-box-flex: 65;
-      -ms-flex-positive: 65;
-          flex-grow: 65; }
+  -ms-flex-positive: 65;
+      flex-grow: 65; }
 
 .react-flex-v2--flex-grow-66 {
-  -webkit-box-flex: 66;
-      -ms-flex-positive: 66;
-          flex-grow: 66; }
+  -ms-flex-positive: 66;
+      flex-grow: 66; }
 
 .react-flex-v2--flex-grow-67 {
-  -webkit-box-flex: 67;
-      -ms-flex-positive: 67;
-          flex-grow: 67; }
+  -ms-flex-positive: 67;
+      flex-grow: 67; }
 
 .react-flex-v2--flex-grow-68 {
-  -webkit-box-flex: 68;
-      -ms-flex-positive: 68;
-          flex-grow: 68; }
+  -ms-flex-positive: 68;
+      flex-grow: 68; }
 
 .react-flex-v2--flex-grow-69 {
-  -webkit-box-flex: 69;
-      -ms-flex-positive: 69;
-          flex-grow: 69; }
+  -ms-flex-positive: 69;
+      flex-grow: 69; }
 
 .react-flex-v2--flex-grow-70 {
-  -webkit-box-flex: 70;
-      -ms-flex-positive: 70;
-          flex-grow: 70; }
+  -ms-flex-positive: 70;
+      flex-grow: 70; }
 
 .react-flex-v2--flex-grow-71 {
-  -webkit-box-flex: 71;
-      -ms-flex-positive: 71;
-          flex-grow: 71; }
+  -ms-flex-positive: 71;
+      flex-grow: 71; }
 
 .react-flex-v2--flex-grow-72 {
-  -webkit-box-flex: 72;
-      -ms-flex-positive: 72;
-          flex-grow: 72; }
+  -ms-flex-positive: 72;
+      flex-grow: 72; }
 
 .react-flex-v2--flex-grow-73 {
-  -webkit-box-flex: 73;
-      -ms-flex-positive: 73;
-          flex-grow: 73; }
+  -ms-flex-positive: 73;
+      flex-grow: 73; }
 
 .react-flex-v2--flex-grow-74 {
-  -webkit-box-flex: 74;
-      -ms-flex-positive: 74;
-          flex-grow: 74; }
+  -ms-flex-positive: 74;
+      flex-grow: 74; }
 
 .react-flex-v2--flex-grow-75 {
-  -webkit-box-flex: 75;
-      -ms-flex-positive: 75;
-          flex-grow: 75; }
+  -ms-flex-positive: 75;
+      flex-grow: 75; }
 
 .react-flex-v2--flex-grow-76 {
-  -webkit-box-flex: 76;
-      -ms-flex-positive: 76;
-          flex-grow: 76; }
+  -ms-flex-positive: 76;
+      flex-grow: 76; }
 
 .react-flex-v2--flex-grow-77 {
-  -webkit-box-flex: 77;
-      -ms-flex-positive: 77;
-          flex-grow: 77; }
+  -ms-flex-positive: 77;
+      flex-grow: 77; }
 
 .react-flex-v2--flex-grow-78 {
-  -webkit-box-flex: 78;
-      -ms-flex-positive: 78;
-          flex-grow: 78; }
+  -ms-flex-positive: 78;
+      flex-grow: 78; }
 
 .react-flex-v2--flex-grow-79 {
-  -webkit-box-flex: 79;
-      -ms-flex-positive: 79;
-          flex-grow: 79; }
+  -ms-flex-positive: 79;
+      flex-grow: 79; }
 
 .react-flex-v2--flex-grow-80 {
-  -webkit-box-flex: 80;
-      -ms-flex-positive: 80;
-          flex-grow: 80; }
+  -ms-flex-positive: 80;
+      flex-grow: 80; }
 
 .react-flex-v2--flex-grow-81 {
-  -webkit-box-flex: 81;
-      -ms-flex-positive: 81;
-          flex-grow: 81; }
+  -ms-flex-positive: 81;
+      flex-grow: 81; }
 
 .react-flex-v2--flex-grow-82 {
-  -webkit-box-flex: 82;
-      -ms-flex-positive: 82;
-          flex-grow: 82; }
+  -ms-flex-positive: 82;
+      flex-grow: 82; }
 
 .react-flex-v2--flex-grow-83 {
-  -webkit-box-flex: 83;
-      -ms-flex-positive: 83;
-          flex-grow: 83; }
+  -ms-flex-positive: 83;
+      flex-grow: 83; }
 
 .react-flex-v2--flex-grow-84 {
-  -webkit-box-flex: 84;
-      -ms-flex-positive: 84;
-          flex-grow: 84; }
+  -ms-flex-positive: 84;
+      flex-grow: 84; }
 
 .react-flex-v2--flex-grow-85 {
-  -webkit-box-flex: 85;
-      -ms-flex-positive: 85;
-          flex-grow: 85; }
+  -ms-flex-positive: 85;
+      flex-grow: 85; }
 
 .react-flex-v2--flex-grow-86 {
-  -webkit-box-flex: 86;
-      -ms-flex-positive: 86;
-          flex-grow: 86; }
+  -ms-flex-positive: 86;
+      flex-grow: 86; }
 
 .react-flex-v2--flex-grow-87 {
-  -webkit-box-flex: 87;
-      -ms-flex-positive: 87;
-          flex-grow: 87; }
+  -ms-flex-positive: 87;
+      flex-grow: 87; }
 
 .react-flex-v2--flex-grow-88 {
-  -webkit-box-flex: 88;
-      -ms-flex-positive: 88;
-          flex-grow: 88; }
+  -ms-flex-positive: 88;
+      flex-grow: 88; }
 
 .react-flex-v2--flex-grow-89 {
-  -webkit-box-flex: 89;
-      -ms-flex-positive: 89;
-          flex-grow: 89; }
+  -ms-flex-positive: 89;
+      flex-grow: 89; }
 
 .react-flex-v2--flex-grow-90 {
-  -webkit-box-flex: 90;
-      -ms-flex-positive: 90;
-          flex-grow: 90; }
+  -ms-flex-positive: 90;
+      flex-grow: 90; }
 
 .react-flex-v2--flex-grow-91 {
-  -webkit-box-flex: 91;
-      -ms-flex-positive: 91;
-          flex-grow: 91; }
+  -ms-flex-positive: 91;
+      flex-grow: 91; }
 
 .react-flex-v2--flex-grow-92 {
-  -webkit-box-flex: 92;
-      -ms-flex-positive: 92;
-          flex-grow: 92; }
+  -ms-flex-positive: 92;
+      flex-grow: 92; }
 
 .react-flex-v2--flex-grow-93 {
-  -webkit-box-flex: 93;
-      -ms-flex-positive: 93;
-          flex-grow: 93; }
+  -ms-flex-positive: 93;
+      flex-grow: 93; }
 
 .react-flex-v2--flex-grow-94 {
-  -webkit-box-flex: 94;
-      -ms-flex-positive: 94;
-          flex-grow: 94; }
+  -ms-flex-positive: 94;
+      flex-grow: 94; }
 
 .react-flex-v2--flex-grow-95 {
-  -webkit-box-flex: 95;
-      -ms-flex-positive: 95;
-          flex-grow: 95; }
+  -ms-flex-positive: 95;
+      flex-grow: 95; }
 
 .react-flex-v2--flex-grow-96 {
-  -webkit-box-flex: 96;
-      -ms-flex-positive: 96;
-          flex-grow: 96; }
+  -ms-flex-positive: 96;
+      flex-grow: 96; }
 
 .react-flex-v2--flex-grow-97 {
-  -webkit-box-flex: 97;
-      -ms-flex-positive: 97;
-          flex-grow: 97; }
+  -ms-flex-positive: 97;
+      flex-grow: 97; }
 
 .react-flex-v2--flex-grow-98 {
-  -webkit-box-flex: 98;
-      -ms-flex-positive: 98;
-          flex-grow: 98; }
+  -ms-flex-positive: 98;
+      flex-grow: 98; }
 
 .react-flex-v2--flex-grow-99 {
-  -webkit-box-flex: 99;
-      -ms-flex-positive: 99;
-          flex-grow: 99; }
+  -ms-flex-positive: 99;
+      flex-grow: 99; }
 
 .react-flex-v2--flex-grow-100 {
-  -webkit-box-flex: 100;
-      -ms-flex-positive: 100;
-          flex-grow: 100; }
+  -ms-flex-positive: 100;
+      flex-grow: 100; }
 
 /* FLEX-SHRINK */
 .react-flex-v2--flex-shrink-0 {

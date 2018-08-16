@@ -232,15 +232,12 @@
       min-height: 40px;
       max-width: 40px;
       max-height: 40px;
-      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
       .react-date-picker__month-view--theme-default .react-date-picker__month-view-day .react-date-picker__month-view-day-text:hover {
         background: #D8EDFF padding-box; }
     .react-date-picker__month-view--theme-default .react-date-picker__month-view-day--in-hover-range, .react-date-picker__month-view--theme-default .react-date-picker__month-view-day--in-range {
