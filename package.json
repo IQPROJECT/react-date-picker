@@ -16,14 +16,13 @@
   "author": "ZippyUI <contact@zippyui.com>",
   "license": "MIT",
   "dependencies": {
-    "create-react-class": "^15.6.3",
     "lodash.throttle": "^4.0.1",
     "object-assign": "4.0.1",
     "raf": "3.2.0",
     "react-class": "2.0.0",
     "react-field": "2.0.2",
     "react-flex": "github:IQPROJECT/react-flex",
-    "react-inline-block": "2.0.0",
+    "react-inline-block": "github:erisnuts/react-inline-block",
     "react-notify-resize": "1.0.3",
     "react-style-normalizer": "1.2.8"
   },
