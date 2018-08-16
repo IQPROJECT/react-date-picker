@@ -16,6 +16,7 @@
   "author": "ZippyUI <contact@zippyui.com>",
   "license": "MIT",
   "dependencies": {
+    "@zippytech/react-notify-resize": "github:IQPROJECT/react-notify-resize",
     "lodash.throttle": "^4.0.1",
     "object-assign": "4.0.1",
     "prop-types": "^15.6.2",
@@ -24,7 +25,7 @@
     "react-field": "2.0.2",
     "react-flex": "github:IQPROJECT/react-flex",
     "react-inline-block": "github:erisnuts/react-inline-block",
-    "react-notify-resize": "1.0.3",
+    "react-notify-resize": "github:IQPROJECT/react-notify-resize",
     "react-style-normalizer": "1.2.8"
   },
   "peerDependencies": {
