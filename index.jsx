@@ -30,7 +30,8 @@ import DateFormatSpinnerInput from './src/DateFormatSpinnerInput'
 import { Flex, Item } from 'react-flex'
 
 var moment = require('moment');
-var React      = require('react')
+var React  = require('react')
+var createReactClass = require('create-react-class');
 
 var render = require('react-dom').render
 
@@ -72,7 +73,7 @@ var GO2SELECTED = {
 function emptyFn(){}
 
 let R = range
-var App = React.createClass({
+var App = createReactClass({
     displayName: 'App',
 
     onLocaleChange: function(event) {
