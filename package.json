@@ -22,9 +22,9 @@
     "prop-types": "^15.6.2",
     "raf": "3.2.0",
     "react-class": "2.0.0",
-    "react-field": "github:erisnuts/react-field",
+    "react-field": "github:IQPROJECT/react-field",
     "react-flex": "github:IQPROJECT/react-flex",
-    "react-inline-block": "github:erisnuts/react-inline-block",
+    "react-inline-block": "github:IQPROJECT/react-inline-block",
     "react-style-normalizer": "1.2.8"
   },
   "peerDependencies": {
