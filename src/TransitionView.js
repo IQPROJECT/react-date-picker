@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { findDOMNode } from 'react-dom'
 import Component from 'react-class'
 
@@ -635,7 +636,7 @@ export default class TransitionView extends Component {
 }
 
 TransitionView.propTypes = {
-  children: React.PropTypes.node.isRequired
+  children: PropTypes.node.isRequired
 }
 
 TransitionView.defaultProps = {
