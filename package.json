@@ -25,7 +25,6 @@
     "react-field": "2.0.2",
     "react-flex": "github:IQPROJECT/react-flex",
     "react-inline-block": "github:erisnuts/react-inline-block",
-    "react-notify-resize": "github:IQPROJECT/react-notify-resize",
     "react-style-normalizer": "1.2.8"
   },
   "peerDependencies": {

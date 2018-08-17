@@ -3,7 +3,7 @@ import Component from 'react-class'
 
 import assign from 'object-assign'
 
-import { NotifyResize } from 'react-notify-resize'
+import { NotifyResize } from '@zippytech/react-notify-resize'
 
 import join from './join'
 import toMoment from './toMoment'
